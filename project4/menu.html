@@ -1,0 +1,50 @@
+﻿<!DOCTYPE HTML>
+<html>
+  <head>
+    <title> Menu </title>
+    <meta charset="utf-8">
+    <base target="mainpage">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body class="menu">
+    <center><div class='semiopacity menu-border'><img src='img/menu.png'></div></center>
+   <div class='semiopacity menu-border'><ul class="menu">
+      <li><a href="mainpage.html"> <img src='img/mainpage.png'></a></li>
+      <div><li> <a onclick="down1()" rel="nofollow"><img src='img/themes.png'></a></li>
+        <div style="display:none;" id="div1"><ul>
+          <li><a href="aboutpython.html"> <img src='img/aboutpython.png'></a></li>
+          <div><li> <a href='types.html'><a onclick="down2()"> <img src='img/types.png'></a></a></li>
+        <div style="display:none;" id="div2"></li></a>
+			<ul style='font-size: 15px'>
+				<li><a href="types.html#num">Числа</a></li>
+          <li><a href="conditions.html"> <img src='img/conditions.png'></a></li>
+          <li><a href="cycles.html"> <img src='img/cycles.png'></a></li>
+          <li><a href="functions.html"> <img src='img/functions.png'></a></li>
+          <li><a href="classes.html"> <img src='img/classes.png'></a></li>
+        </ul></div></div>
+        <li><a href="materials.html"> <img src='img/materials.png'></a></li>
+        <li><a href="contacts.html"><img src='img/contacts.png'></a></li>
+      </ul></div>
+<img class="snake" src="img/180px-Python.png">
+  <script>
+function down1()
+{
+var a = document.getElementById('div1');
+if ( a.style.display == 'none' )
+a.style.display = 'block'
+else
+if ( a.style.display == 'block' )
+a.style.display = 'none';
+};
+function down2()
+{
+var a = document.getElementById('div2');
+if ( a.style.display == 'none' )
+a.style.display = 'block'
+else
+if ( a.style.display == 'block' )
+a.style.display = 'none';
+};
+</script>
+  </body>
+</html>

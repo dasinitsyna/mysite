@@ -1,0 +1,97 @@
+<html>
+<script async src="script.js">
+</script>
+  <head>
+    <title> PyLing </title>
+    <meta charset="utf-8">
+    <base target="mainpage">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+  <h1><div class='semiopacity'>Тесты</div></h1>
+  <form name="c">
+<ol start="0">
+<li>Посчитать сумму всех натуральных чисел от 8 до 657 включительно. 
+<br>Ответ: <input type="text" name="cycles0">
+<input class="submit" type="button" value="Проверить" onclick=c0() >
+Результат: <img name="resc0" height="40"></li>
+
+<li>Посчитать, сколько полных квадратов лежит в диапазоне от 3 до 100854.
+<br>Ответ: <input type="text" name="cycles1">
+<input class="submit" type="button" value="Проверить" onclick=c1() >
+Результат: <img name="resc1" height="40"></li>
+
+<li>Среди различных символов <a href="files/text.txt" download>здесь</a> есть несколько букв, которые составляют слово. Найдите это слово. 
+<br>Ответ: <input type="text" name="cycles2">
+<input class="submit" type="button" value="Проверить" onclick=c2() >
+Результат: <img name="resc2" height="40"></li>
+
+<li>Посчитать наибольшее количество нулей, встречающееся в одной строке <a href="files/file.txt" download>этого файла</a>.
+<br>Ответ: <input type="text" name="cycles3">
+<input class="submit" type="button" value="Проверить" onclick=c3() >
+Результат: <img name="resc3" height="40"></li>
+
+<li> В <a href="files/matrix1.txt" download>этом</a> и <a href="files/matrix2.txt" download>этом</a> файлах найти количество единиц и плюсиков, состоящих из единиц (в первой строчке файла через пробел записаны число строк и столбцов). 
+<br><img src="img/matrix.png" align="top">Здесь 15 единиц и 3 плюсика.
+<br> Сначала потренируйтесь на <a href="files/matrix0.txt" download>маленьком файле</a>, изменяя его.
+<br>файл 1: <input type="text" name="cycles40"> единиц и <input type="text" name="cycles401"> плюсиков
+<input class="submit" type="button" value="Проверить" onclick=c40() >
+Результат: <img name="resc40" height="40">
+<br>файл 2: <input type="text" name="cycles41"> единиц и <input type="text" name="cycles411"> плюсиков
+<input class="submit" type="button" value="Проверить" onclick=c41() >
+Результат: <img name="resc41" height="40"></li>
+
+<li>Вывести строку из <a href="files/taskfile.txt" download>этого файла</a>, которая встречается 6 раз (строку вводить без кавычек, сохранять пробелы между цифрами). 
+<br>Ответ: <input type="text" name="cycles5">
+<input class="submit" type="button" value="Проверить" onclick=c5() >
+Результат: <img name="resc5" height="40"></li>
+
+<li>В этом же файле посчитать количество строк-палиндромов (удалить \n в конце строк).
+<br>Ответ: <input type="text" name="cycles7">
+<input class="submit" type="button" value="Проверить" onclick=c7() >
+Результат: <img name="resc7" height="40"></li>
+
+<li>Выведите самое встречаемое слово в тексте рассказа Конан Дойля  <a href="files/band.txt" download>"Пестрая Лента"</a>.
+<br>Ответ: <input type="text" name="cycles6">
+<input class="submit" type="button" value="Проверить" onclick=c6() >
+Результат: <img name="resc6" height="40"></li>
+
+<li>Выведите на экран количество счастливых билетиков <a href="files/ticket.dat" download>отсюда</a>.
+<br>Ответ: <input type="text" name="cycles8">
+<input class="submit" type="button" value="Проверить" onclick=c8() >
+Результат: <img name="resc8" height="40"></li>
+
+<li>Отсортируйте числа в  <a href="num.txt">этом файле</a> по возрастанию при помощи <a href="https://ru.wikipedia.org/wiki/Сортировка_пузырьком">метода пузырька</a> и выведите 17-е число (считая с 0) из отсортированного файла.
+<br>Ответ: <input type="text" name="cycles9">
+<input class="submit" type="button" value="Проверить" onclick=c9() >
+Результат: <img name="resc9" height="40"></li>
+
+<li> <a href="#6" target="_self">(см задача 6)</a>  Вот зашифрованная цитата: "D#olqjxlvwlf#v|vwhp#lv#d#vhulhv#ri#gliihuhqfhv#ri#vrxqg#frpelqhg#zlwk#d#vhulhv#ri#gliihuhqfhv#ri#lghdv1#Ihuglqdqg#gh#Vdxvvxuh" . Расшифруйте ее, зная, что каждый символ здесь имеет в ASCII номер на 3 больше необходимого. В ответ записывайте цитату без кавычек.
+<br>Ответ: <input type="text" name="cycles10">
+<input class="submit" type="button" value="Проверить" onclick=c10() >
+Результат: <img name="resc10" height="40"></li>
+
+</ol>
+</form>
+
+<b>Дополнительные задачи:</b>
+<ol start="0">
+<li> Задайте длинную строку, состоящую из любых символов. Создайте файл с числами, не превышающими количество символов в строке. Затем для каждого i в файле выведите i-ый элемент строки.</li>
+<li>Выведите на экран все числа, делящиеся на 3, лежащие в диапазоне от 8 до 37 (двумя способами).</li>
+<li>Напишите программу, выводящую модуль числа (не используя abs!).</li>
+<li> Представьте, что у вас есть программа, на вход которой должно подаваться число. Напишите для нее защиту от дураков (если пользователь вводит не число - вывести сообщение об ошибке).</li>
+<li> Выведите на экран следующие фигуры:<br>
+<br>a)  <img src="img/t1.png" align="top"> b)  <img src="img/t2.png" align="top"> c)   <img src="img/t3.png" align="top"> d)  <img src="img/t4.png" align="top"> e) <img src="img/t5.png" align="top"> <br><br> f)  <img src="img/t6.png" align="top"> g)  <img src="img/t7.png" align="top"> h) <img src="img/t8.png" align="top">  i) <img src="img/t9.png" align="top"> j) <img src="img/t10.png" align="top"> <br><br> k) <img src="img/t11.png" align="top"> l) <img src="img/t12.png" align="top"> m) <img src="img/t13.png" align="top"> n) <img src="img/t14.png" align="top"></li>
+<li>* На вход подается число, которое является стороной квадрата. По нему выдать квадрат, состоящий из спирально закрученной последовательности цифр. Пример ответа для числа 4:
+<br><pre> 1  2  3  4
+12 13 14  5
+11 16 15  6
+10  9  8  7</pre></li>
+<li><a name="6">Каждому символу в таблице ASCII ставится в соответствие номер.</a> Для того, чтобы узнать номер элемента, используется функция ord(). Например, ord('a') равен 97. Наоборот, чтобы получить символ, используется chr(). То есть, chr(97) равен 'a'. Поэкспериментируйте, посмотрите, каким символам соответствуют какие номера. Выведите на экран английский алфавит.</li>
+<li>Напишите программу, берущую на вход текст и выдающую список слов этого текста.</li>
+<li>* Напишите строковый калькулятор (на вход принимается строка с выражением, которое надо решить). Подсказка: для работы со скобками используйте <a href="https://ru.wikipedia.org/wiki/Стек" target="blank">стек</a>.</li>
+</ol>
+</p>
+
+</body>
+</html>

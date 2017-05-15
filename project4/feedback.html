@@ -1,0 +1,59 @@
+<html>
+<head>
+<meta charset='utf-8'>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1><div class='semiopacity'>Feedback</div></h1>
+<p>Мы сделали для вас этот сайт и надеемся, что он поможет вам на вашем трудном, но увлекательном пути изучения Python. Заполнив простую форму ниже, вы, в свою очередь, сможете помочь нам в создании сайтов в дальнейшем.</p>
+<form  action="../../../cgi-bin/f_submission.pl"   target='_self' method='get'>
+<p>
+ФИ (opt): <input type="Text"  name="fio"  size=14 >
+</p>
+<p>
+Группа (opt): <input type="Text"  name="group"  size=14 >
+</p>
+<p>
+Понравился ли вам сайт в целом?
+<input type="Radio" name="mark" value="yes" >да
+<input type="Radio" name="mark" value="no">нет
+</p>
+<p>
+Оцените полезность представленной информации:
+<input type="Radio" name="usability" value="0" >0
+<input type="Radio" name="usability" value="1">1
+<input type="Radio" name="usability" value="2">2
+<input type="Radio" name="usability" value="3">3
+<input type="Radio" name="usability" value="4">4
+<input type="Radio" name="usability" value="no">не читал
+</p>
+<p>
+Оцените дизайн:
+<input type="Radio" name="usability" value="0" >0
+<input type="Radio" name="usability" value="1">1
+<input type="Radio" name="usability" value="2">2
+<input type="Radio" name="usability" value="3">3
+<input type="Radio" name="usability" value="4">4
+</p>
+<p>Комментарий (это самая важная часть feedback-а, поэтому если вам есть что сказать - говорите): 
+<br><TEXTAREA name="review" rows=4 cols=24 size="14"></TEXTAREA>
+</p>
+
+<!--Нижерасположенные фрагменты перемещать нельзя-->
+<p>
+<input type="Hidden" name="file_name" value="file.txt" >
+</p>
+
+<p>
+<input type="Submit" name="Submit" value="Отправить">
+<!--
+<input type="image" src="src.jpg" name="submit" value="submit">
+-->
+</p>
+
+</form>
+
+</body>
+
+</html> 
+
